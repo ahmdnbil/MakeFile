@@ -1,0 +1,6 @@
+#another method to declare variable
+x := nabil
+LIST = one two three
+List = one two three four
+file = lab.c
+.PHONY: clean
