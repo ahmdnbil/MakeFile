@@ -1,5 +1,5 @@
 CPU_CLK= 8000000UL
-MCU= atmega32
+DEVICE= atmega32
 rtosCFile = Include/SERVICES/RTOS/RTOS_Program.c
 rtosOFile = Debug/$(subst .c,.o,$(subst Include,build,$(rtosCFile)) )
 rtosDFile = Debug/$(subst .c,.d,$(subst Include,build,$(rtosCFile)) )
