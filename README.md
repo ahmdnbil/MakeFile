@@ -64,3 +64,18 @@
     <code>avr-objdump -h -S elfFile.elf >lssfile.lss </code>
 </div>
 <br>
+
+
+- ###  Flags to Generate LSS file [Optional]
+|Flag              | Electivity  | Description |
+| :--------------: | :---------: | :-----------|
+| ***-R*** | **Optional** | to remove the section following this falg like eeprom |
+| ***-O*** | **MUST** | to tell the avr-objcopy the output file with the following flag|
+| ***ihex*** | **MUST** | to generate output file from the type of Intel Hex file |
+
+<br>
+<div>
+    <div> <b> the following command is full command </b></div> 
+    <code>avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex elfFile.elf hexFile.hex </code>
+</div>
+<br>
