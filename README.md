@@ -66,7 +66,7 @@
 <br>
 
 
-- ###  Flags to Generate LSS file [Optional]
+- ###  Flags to Generate intel HEX file
 |Flag              | Electivity  | Description |
 | :--------------: | :---------: | :-----------|
 | ***-R*** | **Optional** | to remove the section following this falg like eeprom |
