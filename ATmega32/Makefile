@@ -24,8 +24,7 @@ build: folder
 	@$(CC) -Os -funsigned-char -mmcu=$(DEVICE) -DF_CPU=$(CPU_CLK)   -o "$(dioOFile)" -c "$(dioCFile)"
 	
 
-#flags 
-# -Wl [Mandatory]: Passing various linker options to control the linking process
+
 linker: build
 	@$(CC) -mmcu=$(DEVICE) -o "$(elfFile)"  $(rtosOFile)  $(timer1OFile)  $(dioOFile)  $(mainOFile)   
 
